@@ -1,0 +1,562 @@
+
+/* default css  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Lexend Exa', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    /* 1rem = 10px  */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+ .logo h1{
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 0 0 5px black;  
+  }
+  
+  /* latter */
+
+  .logo>h1::first-letter{
+    font-size: 50px;
+    color: #fd5f00;
+  }
+
+  logo_second>span::first-letter{
+    font-size: 50px;
+    color: #fd5f00;
+  }
+    
+/* header css  */
+
+header{
+    padding: 4rem 4rem 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.fa-envelope, .fa-phone{
+    color: #fd5f00;
+    font-size: 1.8rem;
+}
+.more h3{
+    color: black;
+    padding-bottom: .5rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family: 'poppins', sans-serif;
+}
+
+.more p{
+    color:#000000b3;
+    font-size: 1.3rem;
+}
+
+.contactInfo button{
+    background-color: #fd5f00;
+    width: 12rem;
+    padding: 1rem 0;
+    color: white;
+    outline: none;
+    border: 1px solid #fd5f00;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    margin-left: 5rem;
+    font-family: 'poppins', sans-serif;
+    border-radius: 40px;
+}
+.contactInfo button:hover{
+    background-color: transparent;
+    color: #fd5f00;
+}
+
+.navbarLinks{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #0d1128;
+    padding: 1rem 2rem;
+}
+.navbarLinks .navLinks{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navLinks li a.active{
+    color:#fd5f00;
+}
+.navLinks li a{
+    color:white;
+    font-size: 1.4rem;
+    font-family: 'poppins', sans-serif;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.navLinks li a:hover{
+    color:#fd5f00;
+}
+.input{
+    position: relative;
+}
+.input input{
+    padding: 1.3rem;
+    width: 30rem;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #d3d3d340;
+    color: white;
+    border-radius: 5rem;
+}
+.input input::placeholder{
+    color: white;
+}
+.icon i{
+    color: white;
+    font-size: 1.8rem;
+}
+.icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+}
+
+/* hero section css  */
+
+.hero {
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgb(228 100 13 / 50%)), url(../images/bg1.webp);
+    /* height: 70vh; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* card section css  */
+
+.card{
+    width: 100%;
+    background-color: #0d1128;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+.card.active{
+    background-color: #fd5f00;
+}
+.card i{
+    font-size: 2.8rem;
+}
+.card h3{
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    padding-bottom: 2.5rem;
+}
+
+.card p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card_flex{
+    display: flex;
+    align-items: center;
+}
+
+/* our courses css  */
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem;
+}
+.heading h1{
+    font-size: 4rem;
+    font-family: 'poppins', sans-serif;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: .6rem;
+    background-color: #fd5f00;
+    left: 0;
+    border-radius: 5rem;
+    top: -1rem;
+}
+.course_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem 4rem;
+    margin-bottom: 3rem;
+}
+
+.courseCard{
+    width: 40rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.courseCard:hover{
+    transform:translateY(-1rem);
+}
+.courseCard i{
+    font-size: 3rem;
+    color: #fd5f00;
+    padding-bottom: 1.8rem;
+}
+
+.courseCard h3{
+    color: #262626;
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.courseCard p{
+    color: #494646;
+    font-size: 1.5rem;
+}
+
+/* teacher section css  */
+.teacherFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+}
+.teacherCard{
+    width: 30rem;
+    height: auto;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.teacherCard:hover{
+    transform: translateY(-1rem);
+}
+.teacherCard .img img{
+    width: 100%;
+    height: auto;
+    transition: .3s ease-in-out;
+}
+.teacherCard .img img:hover{
+    opacity: 0.9;
+}
+.teacherCard .bio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+.teacherCard .bio h4{
+    color: #0d1128;
+    font-size: 1.8rem;
+}
+.teacherCard .bio p{
+    color:#fd5f00;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+}
+
+/* contact section css  */
+
+.contactFlex{
+    display: flex;
+    padding: 2rem 4rem;
+    width: 100%;
+    gap: 3rem;
+    justify-content: center;
+}
+.contactFlex .left .image {
+    width: 50rem;
+}
+.contactFlex .left .image img{
+    width: 100%;
+    height: 100%;
+}
+form{
+    width: 100%;
+    display: block;
+}
+form .flex{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+form .flex input{
+    padding: 1rem ;
+    width: 100%;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 1px solid lightgray;
+}
+form input{
+    padding: 1rem ;
+    width: 100%;
+    margin-bottom: 2rem;
+    outline: none;
+    border: 1px solid lightgray;
+}
+form textarea{
+    padding: 1rem ;
+    width: 100%;
+    outline: none;
+    border: 1px solid lightgray;
+    resize: none;
+}
+
+form button{
+    background-color: #fd5f00;
+    width: 12rem;
+    padding: 1rem 0;
+    color: white;
+    outline: none;
+    border: 1px solid #fd5f00;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    font-family: 'poppins', sans-serif;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 40px;
+}
+form button:hover{
+    background-color: transparent;
+    color: #fd5f00;
+}
+
+/* footer css  */
+footer{
+    width: 100%;
+    background-color: #0d1128;
+    padding: 4rem;
+    color: #fff;
+}
+
+.footerFlex{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+.footerFlex h2{
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+}
+.footerFlex p{
+    font-size: 1.245rem;
+    color: lightgray;
+    padding-bottom: 1.3rem;
+    transition: .3s ease-in-out;
+    letter-spacing: 1px;
+}
+.footerFlex p:hover{
+    color: white;
+    cursor: pointer;
+    transform:  translateX(5px);
+}
+#copyright{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
+
+#menubar{
+    color: white;
+    font-weight: 400;
+    display: none;
+}
+/* media querries  */
+
+@media screen and (max-width:890px){
+    .card_flex{
+        flex-direction: column;
+    }
+    .course_flex{
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    .courseCard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .courseCard p{
+        text-align: center;
+    }
+    .teacherFlex{
+        flex-wrap: wrap;
+    }
+    .contactFlex{
+        flex-direction: column;
+    }
+    .contactFlex .left .image {
+        width: 100%;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .logo{
+        margin-bottom: 2rem;
+    }
+    .contactInfo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .contactInfo button {
+        margin-left: 0;
+        position: absolute;
+        right: 3rem;
+        margin-top: 7rem;
+    }
+    header {
+        padding: 2rem 4rem 0;
+    }
+    #menubar{
+        display: block;
+    }
+    .navbarLinks .navLinks {
+        display: block;
+        position: absolute;
+        left: 4rem;
+        margin-top: 5rem;
+        background:#0d1128;
+        width: 0;
+        overflow: hidden;
+        transition: .2s ease-in-out;
+    }
+    .navbarLinks .navLinks.active{
+        width: 20rem;
+    }
+    .navLinks li {
+        padding:1rem 1rem;
+        border-bottom: 1px solid #494646;
+        z-index: 999;
+    }
+}
+
+@media screen and (max-width:699px){
+    .teacherCard{
+        width: 40rem;
+    }
+    .main h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+    .main {
+        padding: 12rem 2rem;
+    }
+    .main p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+    header {
+        padding: 2rem 0rem 0;
+    }
+    .navbar {
+        padding-left: 2rem;
+    }
+    .navbarLinks .navLinks {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        margin-top: 5rem;
+        background:#0d1128;
+        width: 0;
+        overflow: hidden;
+        transition: .2s ease-in-out;
+    }
+}
+
+@media screen and (max-width:560px){
+    .footerFlex {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 4rem;
+        flex-direction: column;
+    }
+    .footerFlex .list{
+        margin-bottom: 3rem;
+    }
+    .heading h1 {
+        font-size: 3rem;
+    }
+    .teacherCard {
+        width: 100%;
+    }
+    .main h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .main p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        width: 38rem;
+    }
+    form .flex {
+        display: block;
+    }
+}
+
+@media screen and (max-width:460px){
+    #copyright {
+        font-size: 1.2rem;
+    }
+    .input input {
+        width: 22rem;
+    }
+}
+@media screen and (max-width:430px){
+    .main h1 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .main p {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        width: 26rem;
+    }
+    .heading h1 {
+        font-size: 2.5rem;
+    }
+}
